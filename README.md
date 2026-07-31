@@ -92,6 +92,36 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 | [`input-output_6_paths_directories.py`](input-output/input-output_6_paths_directories.py) | os.path (join/split/abspath/exists/isfile/isdir), pathlib (Path/Slash operator/glob/read_text/write_text/stat), shutil (copy/move/rmtree), tempfile |
 | [`input-output_7_logging.py`](input-output/input-output_7_logging.py) | Log levels, formatters, file+console handlers, logger hierarchy, RotatingFileHandler, TimedRotatingFileHandler, custom formatter, dictConfig |
 
+### 📚 [stdlib](stdlib/) — Standard library (one file per library)
+| File | Description |
+|------|-------------|
+| [`stdlib_json.py`](stdlib/stdlib_json.py) | JSON serialization/deserialization, dumps/loads, dump/load files, custom objects, error handling |
+| [`stdlib_math.py`](stdlib/stdlib_math.py) | Math constants, rounding, power/log, trigonometric, combinatorial (comb/perm/gcd/lcm), special functions (erf/gamma), floating-point utilities |
+| [`stdlib_random.py`](stdlib/stdlib_random.py) | Random numbers, seed, choice/choices/sample, shuffle, distributions (gauss/uniform/triangular), practical examples (password, color, Monte Carlo) |
+| [`stdlib_pathlib.py`](stdlib/stdlib_pathlib.py) | Path creation/properties, read/write files, directory operations, glob/rglob, path vs os.path comparison, temporary files |
+| [`stdlib_hashlib.py`](stdlib/stdlib_hashlib.py) | SHA-256/MD5/SHA-1/BLAKE2 hashing, incremental hashing, HMAC, password hashing with salt, PBKDF2, file integrity verification |
+| [`stdlib_typing.py`](stdlib/stdlib_typing.py) | Type hints, Optional/Union/Literal/Final, Callable, TypeVar, Generic, TypedDict, Protocol, TypeAlias, overload |
+| [`stdlib_argparse.py`](stdlib/stdlib_argparse.py) | Positional/optional arguments, types, nargs, subcommands, mutually exclusive groups, custom type conversion, complete CLI example |
+| [`stdlib_datetime.py`](stdlib/stdlib_datetime.py) | date/time/datetime, timedelta arithmetic, timezone handling, strftime/strptime, age calculation, business day logic |
+| [`stdlib_functools.py`](stdlib/stdlib_functools.py) | reduce, partial, @lru_cache, @wraps, @total_ordering, @singledispatch, @cached_property, practical patterns |
+| [`stdlib_glob.py`](stdlib/stdlib_glob.py) | glob/iglob patterns, recursive **, character ranges [abc], glob.escape, glob vs pathlib vs os.walk comparison |
+| [`stdlib_hashlib.py`](stdlib/stdlib_hashlib.py) | SHA-256/MD5/SHA-1/BLAKE2 hashing, incremental hashing, HMAC, password hashing with salt, PBKDF2, file integrity verification |
+| [`stdlib_itertools.py`](stdlib/stdlib_itertools.py) | count/cycle/repeat, accumulate, chain, compress/filterfalse/takewhile/dropwhile, groupby, islice, permutations/combinations/product, zip_longest |
+| [`stdlib_json.py`](stdlib/stdlib_json.py) | JSON serialization/deserialization, dumps/loads, dump/load files, custom objects, error handling |
+| [`stdlib_math.py`](stdlib/stdlib_math.py) | Math constants, rounding, power/log, trigonometric, combinatorial (comb/perm/gcd/lcm), special functions (erf/gamma), floating-point utilities |
+| [`stdlib_operator.py`](stdlib/stdlib_operator.py) | Arithmetic/comparison/logical operators as functions, itemgetter/attrgetter/methodcaller, functional patterns with reduce/sort/groupby |
+| [`stdlib_os.py`](stdlib/stdlib_os.py) | Environment variables, path operations (join/split/abspath), file/directory existence, stat, directory creation/removal, os.walk, process/system info |
+| [`stdlib_pathlib.py`](stdlib/stdlib_pathlib.py) | Path creation/properties, read/write files, directory operations, glob/rglob, path vs os.path comparison, temporary files |
+| [`stdlib_pickle.py`](stdlib/stdlib_pickle.py) | Object serialization/deserialization, file I/O, custom classes, __getstate__/__setstate__, protocols, caching pattern, safety warnings |
+| [`stdlib_random.py`](stdlib/stdlib_random.py) | Random numbers, seed, choice/choices/sample, shuffle, distributions (gauss/uniform/triangular), practical examples (password, color, Monte Carlo) |
+| [`stdlib_shutil.py`](stdlib/stdlib_shutil.py) | File/directory copy (copy/copytree), move, rmtree, disk_usage, which, make_archive/unpack_archive, copystat |
+| [`stdlib_time.py`](stdlib/stdlib_time.py) | Timestamps, struct_time, formatting/parsing (strftime/strptime), sleep, perf_counter/monotonic/process_time, timezone info, Timer context manager |
+| [`stdlib_traceback.py`](stdlib/stdlib_traceback.py) | format_exc/extract_tb/extract_stack, custom error formatting, walking traceback frames, chained exceptions, logging integration, ExceptionReporter |
+| [`stdlib_typing.py`](stdlib/stdlib_typing.py) | Type hints, Optional/Union/Literal/Final, Callable, TypeVar, Generic, TypedDict, Protocol, TypeAlias, overload |
+| [`stdlib_urllib.py`](stdlib/stdlib_urllib.py) | URL parsing (urlparse), construction (urlunparse), encoding (quote/unquote), query strings (parse_qs/urlencode), HTTP requests (urlopen), error handling |
+| [`stdlib_webbrowser.py`](stdlib/stdlib_webbrowser.py) | Browser detection, open/open_new/open_new_tab, specific browser controllers, custom browser registration, search URL builder |
+| [`stdlib_zipfile.py`](stdlib/stdlib_zipfile.py) | ZIP creation/reading/extraction, writestr, compression methods, ZipInfo, password-protected archives, in-memory ZIP, integrity check, directory backup |
+
 ### 🌐 [web-scraping](web-scraping/) — Web scraping examples
 | File | Description |
 |------|-------------|
@@ -157,6 +187,27 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 │       └── shapes_3d/
 │           ├── __init__.py
 │           └── volume.py
+├── stdlib/
+│   ├── stdlib_argparse.py
+│   ├── stdlib_datetime.py
+│   ├── stdlib_functools.py
+│   ├── stdlib_glob.py
+│   ├── stdlib_hashlib.py
+│   ├── stdlib_itertools.py
+│   ├── stdlib_json.py
+│   ├── stdlib_math.py
+│   ├── stdlib_operator.py
+│   ├── stdlib_os.py
+│   ├── stdlib_pathlib.py
+│   ├── stdlib_pickle.py
+│   ├── stdlib_random.py
+│   ├── stdlib_shutil.py
+│   ├── stdlib_time.py
+│   ├── stdlib_traceback.py
+│   ├── stdlib_typing.py
+│   ├── stdlib_urllib.py
+│   ├── stdlib_webbrowser.py
+│   └── stdlib_zipfile.py
 ├── variables/
 │   ├── var_1_simple.py
 │   ├── var_2_impossible.py

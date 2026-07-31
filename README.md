@@ -47,6 +47,40 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 | [`functions_8_builtins.py`](functions/functions_8_builtins.py) | Type conversion, math (abs/round/min/max/sum/pow/divmod), iterables (enumerate/zip/map/filter/sorted/any/all), string (chr/ord/format), type checking (isinstance/hasattr), eval/exec |
 | [`functions_9_higher_order.py`](functions/functions_9_higher_order.py) | First-class functions, map/filter/reduce, sorted key, function composition (compose/pipe), functools.partial, currying |
 
+### 🏛️ [classes](classes/) — Classes and object-oriented programming
+| File | Description |
+|------|-------------|
+| [`classes_1_definition.py`](classes/classes_1_definition.py) | Class definition, __init__, self, instance/class attributes, instance methods, __str__/__repr__, dynamic attributes |
+| [`classes_2_inheritance.py`](classes/classes_2_inheritance.py) | Inheritance, super(), method overriding, isinstance/issubclass, multiple inheritance, MRO, abstract base classes (ABC), mixins |
+| [`classes_3_encapsulation.py`](classes/classes_3_encapsulation.py) | Public/protected/private attributes, name mangling, @property (getter/setter/deleter), computed properties, __slots__ |
+| [`classes_4_polymorphism.py`](classes/classes_4_polymorphism.py) | Polymorphism, duck typing, operator overloading (+, -, *, /, ==, <, >), common dunder methods, __call__, context manager with __enter__/__exit__ |
+| [`classes_5_methods.py`](classes/classes_5_methods.py) | Instance methods, @classmethod (alternative constructors), @staticmethod (utility functions), from_string/from_dict/from_json patterns, tracking instances |
+| [`classes_6_magic_methods.py`](classes/classes_6_magic_methods.py) | __new__/__init__/__del__, __str__/__repr__/__format__, comparison (__eq__/__lt__/@total_ordering), container protocol (__len__/__getitem__/__contains__/__iter__), Fraction class, type conversion |
+| [`classes_7_dataclasses.py`](classes/classes_7_dataclasses.py) | @dataclass basics, default values, field(), frozen dataclass, inheritance, order=True, __post_init__, asdict/astuple/replace, computed fields |
+| [`classes_8_enum_namedtuple.py`](classes/classes_8_enum_namedtuple.py) | Enum, IntEnum, auto(), Flag/IntFlag (bitwise), NamedTuple, functional syntax, Enum vs dataclass vs NamedTuple comparison |
+
+### 📦 [modules](modules/) — Modules, packages, and standard library
+| File | Description |
+|------|-------------|
+| [`modules_1_basics.py`](modules/modules_1_basics.py) | Module basics, import styles, module attributes, custom module import, conditional import, __all__, reload |
+| [`modules_2_packages.py`](modules/modules_2_packages.py) | Package structure, __init__.py, import styles for packages, sys.path, relative imports, nested packages |
+| [`modules_3_os_sys.py`](modules/modules_3_os_sys.py) | os (environment, paths, directories, walk), sys (argv, version, path, modules), pathlib (Path, glob, read/write) |
+| [`modules_4_collections.py`](modules/modules_4_collections.py) | Counter, defaultdict, OrderedDict, deque (appendleft/popleft/rotate/maxlen), namedtuple, ChainMap |
+| [`modules_5_itertools.py`](modules/modules_5_itertools.py) | count/cycle/repeat, accumulate, chain, compress/filterfalse/takewhile/dropwhile, groupby, islice, permutations/combinations/product, zip_longest, starmap |
+| [`modules_6_functools.py`](modules/modules_6_functools.py) | reduce, partial, lru_cache, @wraps, @total_ordering, @singledispatch, @cached_property |
+| [`modules_7_datetime.py`](modules/modules_7_datetime.py) | date, time, datetime, timedelta, timezone, strftime/strptime, date arithmetic, age calculation, timezone conversion |
+| [`modules_8_re.py`](modules/modules_8_re.py) | Pattern matching, character classes, quantifiers, anchors, groups, findall/finditer/sub, split, compile, common patterns (email, URL, phone) |
+| [`modules_9_util.py`](modules/modules_9_util.py) | Utility module imported by modules_1_basics.py (add, multiply, greet, Calculator, __all__, if __name__) |
+
+📦 [modules/shapes_package/](modules/shapes_package/) — Sample package for modules_2_packages.py
+| File | Description |
+|------|-------------|
+| [`__init__.py`](modules/shapes_package/__init__.py) | Package init: exports area and perimeter modules |
+| [`area.py`](modules/shapes_package/area.py) | Area calculations: circle, rectangle, triangle, square, trapezoid |
+| [`perimeter.py`](modules/shapes_package/perimeter.py) | Perimeter calculations: circle, rectangle, square, triangle |
+| [`shapes_3d/__init__.py`](modules/shapes_package/shapes_3d/__init__.py) | Subpackage init: exports volume module |
+| [`shapes_3d/volume.py`](modules/shapes_package/shapes_3d/volume.py) | Volume calculations: sphere, cube, cuboid, cylinder, cone |
+
 ### 📡 [input-output](input-output/) — Input, output, and I/O operations
 | File | Description |
 |------|-------------|
@@ -68,6 +102,15 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 
 ```
 .
+├── classes/
+│   ├── classes_1_definition.py
+│   ├── classes_2_inheritance.py
+│   ├── classes_3_encapsulation.py
+│   ├── classes_4_polymorphism.py
+│   ├── classes_5_methods.py
+│   ├── classes_6_magic_methods.py
+│   ├── classes_7_dataclasses.py
+│   └── classes_8_enum_namedtuple.py
 ├── control-flow/
 │   ├── control-flow_1_if.py
 │   ├── control-flow_2_for.py
@@ -97,6 +140,23 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 │   ├── input-output_5_env_config.py
 │   ├── input-output_6_paths_directories.py
 │   └── input-output_7_logging.py
+├── modules/
+│   ├── modules_1_basics.py
+│   ├── modules_2_packages.py
+│   ├── modules_3_os_sys.py
+│   ├── modules_4_collections.py
+│   ├── modules_5_itertools.py
+│   ├── modules_6_functools.py
+│   ├── modules_7_datetime.py
+│   ├── modules_8_re.py
+│   ├── modules_9_util.py
+│   └── shapes_package/
+│       ├── __init__.py
+│       ├── area.py
+│       ├── perimeter.py
+│       └── shapes_3d/
+│           ├── __init__.py
+│           └── volume.py
 ├── variables/
 │   ├── var_1_simple.py
 │   ├── var_2_impossible.py

@@ -1,0 +1,13 @@
+{
+  "name": "Alice",
+  "age": 30,
+  "scores": [
+    85,
+    92,
+    78
+  ],
+  "address": {
+    "city": "Seoul",
+    "zip": "04500"
+  }
+}

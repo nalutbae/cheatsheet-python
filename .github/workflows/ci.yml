@@ -27,24 +27,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Compile check all Python files
-        run: |
-          echo "Checking all .py files compile without errors..."
-          FAILED=0
-          for f in $(find . -name '*.py' -not -path '*__pycache__*' -not -path '*examples*' | sort); do
-            if python -m py_compile "$f" 2>/dev/null; then
-              echo "  OK: $f"
-            else
-              echo "  FAIL: $f"
-              FAILED=1
-            fi
-          done
-          if [ $FAILED -ne 0 ]; then
-            echo "::error::Some files failed to compile"
-            exit 1
-          fi
-          echo "All files compiled successfully!"
-
       - name: Verify naming convention
         run: |
           echo "Checking file naming convention (category_sequence_description.py)..."
@@ -74,6 +56,24 @@ jobs:
             exit 1
           fi
           echo "No __pycache__ directories found."
+
+      - name: Compile check all Python files
+        run: |
+          echo "Checking all .py files compile without errors..."
+          FAILED=0
+          for f in $(find . -name '*.py' -not -path '*__pycache__*' -not -path '*examples*' | sort); do
+            if python -m py_compile "$f" 2>/dev/null; then
+              echo "  OK: $f"
+            else
+              echo "  FAIL: $f"
+              FAILED=1
+            fi
+          done
+          if [ $FAILED -ne 0 ]; then
+            echo "::error::Some files failed to compile"
+            exit 1
+          fi
+          echo "All files compiled successfully!"
 
   run-stdlib:
     name: Run Stdlib Examples (Python 3.12)

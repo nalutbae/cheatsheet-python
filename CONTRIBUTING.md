@@ -82,12 +82,14 @@ For `stdlib/` files:
 
 ## Adding a Third-Party Library
 
-For `thirdparty/` files:
+For `data/` files:
 
 1. Add the library to `requirements.txt`
 2. Name files as `<library>_<number>_<topic>.py`
 3. Include a comment at the top: `# Requires: pip install <package>`
-4. Update `README.md` thirdparty table
+4. Use `matplotlib.use("Agg")` for non-interactive backends in matplotlib/seaborn files
+5. Save figures to a temp directory and clean up (no files left after running)
+6. Update `README.md` data libraries table
 
 ## Running Tests Locally
 

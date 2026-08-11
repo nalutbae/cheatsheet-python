@@ -1,6 +1,8 @@
 # Core — no dependencies required (pure Python standard library only)
 # These files run with: python <file>.py
 
-# Third-party libraries — install only if you want to run thirdparty/ examples
+# Third-party libraries — install only if you want to run data/ examples
 numpy>=2.0
 pandas>=2.0
+matplotlib>=3.5
+seaborn>=0.13

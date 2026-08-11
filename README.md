@@ -22,7 +22,7 @@ A copy-paste-ready Python cheat sheet — every file is self-contained, runnable
   - [🟡 Intermediate — Input/Output](#-input-output--files-and-arguments)
   - [🟡 Intermediate — Modules](#-modules--packages-and-standard-library)
   - [🟡 Intermediate — Standard Library](#-stdlib--standard-library-reference)
-  - [🔴 Advanced — Third-party (NumPy)](#-third-party--external-libraries)
+  - [🔴 Advanced — Data Libraries (NumPy, Pandas, Matplotlib, Seaborn)](#-data-libraries--numpy-pandas-matplotlib-seaborn)
   - [🌐 Web Scraping](#-web-scraping)
 - [Repository Structure](#repository-structure)
 - [Contributing](#contributing)
@@ -42,9 +42,9 @@ python variables/var_1_simple.py
 python control-flow/control-flow_1_if.py
 python stdlib/stdlib_json.py
 
-# 3. For third-party examples (NumPy), install dependencies first
+# 3. For data library examples (NumPy, Pandas, Matplotlib, Seaborn), install dependencies
 pip install -r requirements.txt
-python thirdparty/numpy_1_array_creation.py
+python data/numpy_1_array_creation.py
 ```
 
 > **Tip:** Every `.py` file is self-contained. Just pick a topic and run it — the output with inline comments will guide you.
@@ -62,6 +62,8 @@ python thirdparty/numpy_1_array_creation.py
 | **🟡 Week 2** | File I/O & arguments | `input-output_1_input` → `input-output_4_argv_argparse` |
 | **🟡 Week 3** | Modules & stdlib | `modules_1_basics`, `stdlib_json`, `stdlib_pathlib` |
 | **🔴 Week 4** | NumPy & data | `numpy_1_array_creation` → `numpy_5_linalg_random_io` |
+| **🔴 Week 5** | Pandas | `pandas_1_basics` → `pandas_3_io_cleaning_patterns` |
+| **🔴 Week 6** | Visualization | `matplotlib_1_basic_plots`, `seaborn_1_statistical_visualization` |
 
 ---
 
@@ -171,19 +173,23 @@ python thirdparty/numpy_1_array_creation.py
 | [`stdlib_urllib.py`](stdlib/stdlib_urllib.py) | `urllib` | URL parsing, encoding, HTTP requests, error handling |
 | [`stdlib_webbrowser.py`](stdlib/stdlib_webbrowser.py) | `webbrowser` | Browser detection, open URLs, custom registration |
 
-### 🔴 Third Party — External Libraries
+### 🔴 Data Libraries — NumPy, Pandas, Matplotlib, Seaborn
 > Requires `pip install -r requirements.txt` before running.
 
 | File | Library | Description |
 |------|---------|-------------|
-| [`numpy_1_array_creation.py`](thirdparty/numpy_1_array_creation.py) | NumPy | Array creation, dtypes, zeros/ones/full, arange/linspace, random |
-| [`numpy_2_indexing_slicing.py`](thirdparty/numpy_2_indexing_slicing.py) | NumPy | 1D/2D indexing, fancy indexing, boolean masks, np.where |
-| [`numpy_3_reshape_broadcast_math.py`](thirdparty/numpy_3_reshape_broadcast_math.py) | NumPy | Reshape/flatten, broadcasting, element-wise ops, matrix math |
-| [`numpy_4_sorting_search_sets_stats.py`](thirdparty/numpy_4_sorting_search_sets_stats.py) | NumPy | sort/argsort, argmax/min, set operations, statistics |
-| [`numpy_5_linalg_random_io.py`](thirdparty/numpy_5_linalg_random_io.py) | NumPy | linalg (det/inv/eig/SVD), distributions, file I/O (npy/npz/CSV) |
-| [`pandas_1_basics.py`](thirdparty/pandas_1_basics.py) | Pandas | Series/DataFrame creation, dtypes, inspection, selection, missing data, strings |
-| [`pandas_2_transform_groupby_merge.py`](thirdparty/pandas_2_transform_groupby_merge.py) | Pandas | Sorting, GroupBy, merge/join, concat, pivot/melt, time series |
-| [`pandas_3_io_cleaning_patterns.py`](thirdparty/pandas_3_io_cleaning_patterns.py) | Pandas | CSV/JSON/Excel I/O, apply/map, duplicates, value counts, data cleaning, performance |
+| [`numpy_1_array_creation.py`](data/numpy_1_array_creation.py) | NumPy | Array creation, dtypes, zeros/ones/full, arange/linspace, random |
+| [`numpy_2_indexing_slicing.py`](data/numpy_2_indexing_slicing.py) | NumPy | 1D/2D indexing, fancy indexing, boolean masks, np.where |
+| [`numpy_3_reshape_broadcast_math.py`](data/numpy_3_reshape_broadcast_math.py) | NumPy | Reshape/flatten, broadcasting, element-wise ops, matrix math |
+| [`numpy_4_sorting_search_sets_stats.py`](data/numpy_4_sorting_search_sets_stats.py) | NumPy | sort/argsort, argmax/min, set operations, statistics |
+| [`numpy_5_linalg_random_io.py`](data/numpy_5_linalg_random_io.py) | NumPy | linalg (det/inv/eig/SVD), distributions, file I/O (npy/npz/CSV) |
+| [`pandas_1_basics.py`](data/pandas_1_basics.py) | Pandas | Series/DataFrame creation, dtypes, inspection, selection, missing data, strings |
+| [`pandas_2_transform_groupby_merge.py`](data/pandas_2_transform_groupby_merge.py) | Pandas | Sorting, GroupBy, merge/join, concat, pivot/melt, time series |
+| [`pandas_3_io_cleaning_patterns.py`](data/pandas_3_io_cleaning_patterns.py) | Pandas | CSV/JSON/Excel I/O, apply/map, duplicates, value counts, data cleaning, performance |
+| [`matplotlib_1_basic_plots.py`](data/matplotlib_1_basic_plots.py) | Matplotlib | Line, scatter, bar, histogram, pie, error bars, fill_between |
+| [`matplotlib_2_subplots_layout_style.py`](data/matplotlib_2_subplots_layout_style.py) | Matplotlib | Subplots, GridSpec, twin axes, custom ticks/annotations, log scale, rcParams, colormaps |
+| [`matplotlib_3_statistical_3d_pandas.py`](data/matplotlib_3_statistical_3d_pandas.py) | Matplotlib | Box/violin plots, heatmap, contour, 3D surface/scatter, stacked area, pandas integration |
+| [`seaborn_1_statistical_visualization.py`](data/seaborn_1_statistical_visualization.py) | Seaborn | relplot/scatter/line, histplot/KDE/ECDF, box/violin/bar/count/swarm, regplot/lmplot, heatmap/clustermap, pairplot/jointplot, themes/palettes |
 
 ### 🌐 Web Scraping
 | File | Description |
@@ -276,7 +282,10 @@ python thirdparty/numpy_1_array_creation.py
 │   ├── stdlib_urllib.py
 │   ├── stdlib_webbrowser.py
 │   └── stdlib_zipfile.py
-├── thirdparty/
+├── data/
+│   ├── matplotlib_1_basic_plots.py
+│   ├── matplotlib_2_subplots_layout_style.py
+│   ├── matplotlib_3_statistical_3d_pandas.py
 │   ├── numpy_1_array_creation.py
 │   ├── numpy_2_indexing_slicing.py
 │   ├── numpy_3_reshape_broadcast_math.py
@@ -284,7 +293,8 @@ python thirdparty/numpy_1_array_creation.py
 │   ├── numpy_5_linalg_random_io.py
 │   ├── pandas_1_basics.py
 │   ├── pandas_2_transform_groupby_merge.py
-│   └── pandas_3_io_cleaning_patterns.py
+│   ├── pandas_3_io_cleaning_patterns.py
+│   └── seaborn_1_statistical_visualization.py
 ├── variables/
 │   ├── var_1_simple.py
 │   ├── var_2_impossible.py
@@ -309,9 +319,9 @@ python thirdparty/numpy_1_array_creation.py
 
 Files follow the pattern `category_sequencenumber_description.py`:
 
-- **Category directories** — `variables/`, `control-flow/`, `functions/`, `classes/`, `input-output/`, `modules/`, `stdlib/`, `thirdparty/`
+- **Category directories** — `variables/`, `control-flow/`, `functions/`, `classes/`, `input-output/`, `modules/`, `stdlib/`, `data/`
 - **Standard library** — `stdlib_<library>.py` (one file per library)
-- **Third-party** — `<library>_<number>_<topic>.py` (multiple files per library)
+- **Data libraries** — `<library>_<number>_<topic>.py` (multiple files per library, in `data/`)
 - **Comments** — English with inline `# result` comments showing expected output
 - **Section separators** — `print("=" * 5, "Section Title", "=" * 5)`
 - **Self-contained** — every file runs independently with `python <file>.py`

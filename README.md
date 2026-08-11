@@ -122,6 +122,15 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 | [`stdlib_webbrowser.py`](stdlib/stdlib_webbrowser.py) | Browser detection, open/open_new/open_new_tab, specific browser controllers, custom browser registration, search URL builder |
 | [`stdlib_zipfile.py`](stdlib/stdlib_zipfile.py) | ZIP creation/reading/extraction, writestr, compression methods, ZipInfo, password-protected archives, in-memory ZIP, integrity check, directory backup |
 
+### 🔢 [thirdparty](thirdparty/) — Third-party libraries (require installation)
+| File | Description |
+|------|-------------|
+| [`numpy_1_array_creation.py`](thirdparty/numpy_1_array_creation.py) | ndarray creation, dtypes, zeros/ones/full/eye/diag, arange/linspace/logspace, random generation, array attributes and methods |
+| [`numpy_2_indexing_slicing.py`](thirdparty/numpy_2_indexing_slicing.py) | 1D/2D indexing, slicing, fancy indexing, boolean masks, np.where, compound conditions, view vs copy, modifying with masks |
+| [`numpy_3_reshape_broadcast_math.py`](thirdparty/numpy_3_reshape_broadcast_math.py) | reshape/flatten/ravel/transpose, expand_dims/squeeze/np.newaxis, broadcasting rules, element-wise arithmetic, comparison/logical ops, math functions, matrix operations (@, dot, inner, outer, linalg) |
+| [`numpy_4_sorting_search_sets_stats.py`](thirdparty/numpy_4_sorting_search_sets_stats.py) | sort/argsort/partition/argpartition, argmax/argmin/where/nonzero/searchsorted, set operations (unique/intersect/union/diff), statistics (mean/std/var/percentile/corrcoef/histogram/bincount) |
+| [`numpy_5_linalg_random_io.py`](thirdparty/numpy_5_linalg_random_io.py) | linalg (det/inv/solve/eig/SVD/norm/rank), random distributions (normal/uniform/poisson/binomial), file I/O (npy/npz/savetxt/loadtxt CSV), practical data analysis example |
+
 ### 🌐 [web-scraping](web-scraping/) — Web scraping examples
 | File | Description |
 |------|-------------|
@@ -208,6 +217,12 @@ Every file is self-contained — copy a snippet, paste it into your editor, and 
 │   ├── stdlib_urllib.py
 │   ├── stdlib_webbrowser.py
 │   └── stdlib_zipfile.py
+├── thirdparty/
+│   ├── numpy_1_array_creation.py
+│   ├── numpy_2_indexing_slicing.py
+│   ├── numpy_3_reshape_broadcast_math.py
+│   ├── numpy_4_sorting_search_sets_stats.py
+│   └── numpy_5_linalg_random_io.py
 ├── variables/
 │   ├── var_1_simple.py
 │   ├── var_2_impossible.py

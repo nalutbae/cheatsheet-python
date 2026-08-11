@@ -3,3 +3,4 @@
 
 # Third-party libraries — install only if you want to run thirdparty/ examples
 numpy>=2.0
+pandas>=2.0

@@ -181,6 +181,9 @@ python thirdparty/numpy_1_array_creation.py
 | [`numpy_3_reshape_broadcast_math.py`](thirdparty/numpy_3_reshape_broadcast_math.py) | NumPy | Reshape/flatten, broadcasting, element-wise ops, matrix math |
 | [`numpy_4_sorting_search_sets_stats.py`](thirdparty/numpy_4_sorting_search_sets_stats.py) | NumPy | sort/argsort, argmax/min, set operations, statistics |
 | [`numpy_5_linalg_random_io.py`](thirdparty/numpy_5_linalg_random_io.py) | NumPy | linalg (det/inv/eig/SVD), distributions, file I/O (npy/npz/CSV) |
+| [`pandas_1_basics.py`](thirdparty/pandas_1_basics.py) | Pandas | Series/DataFrame creation, dtypes, inspection, selection, missing data, strings |
+| [`pandas_2_transform_groupby_merge.py`](thirdparty/pandas_2_transform_groupby_merge.py) | Pandas | Sorting, GroupBy, merge/join, concat, pivot/melt, time series |
+| [`pandas_3_io_cleaning_patterns.py`](thirdparty/pandas_3_io_cleaning_patterns.py) | Pandas | CSV/JSON/Excel I/O, apply/map, duplicates, value counts, data cleaning, performance |
 
 ### 🌐 Web Scraping
 | File | Description |
@@ -278,7 +281,10 @@ python thirdparty/numpy_1_array_creation.py
 │   ├── numpy_2_indexing_slicing.py
 │   ├── numpy_3_reshape_broadcast_math.py
 │   ├── numpy_4_sorting_search_sets_stats.py
-│   └── numpy_5_linalg_random_io.py
+│   ├── numpy_5_linalg_random_io.py
+│   ├── pandas_1_basics.py
+│   ├── pandas_2_transform_groupby_merge.py
+│   └── pandas_3_io_cleaning_patterns.py
 ├── variables/
 │   ├── var_1_simple.py
 │   ├── var_2_impossible.py

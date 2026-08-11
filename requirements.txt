@@ -1,0 +1,5 @@
+# Core — no dependencies required (pure Python standard library only)
+# These files run with: python <file>.py
+
+# Third-party libraries — install only if you want to run thirdparty/ examples
+numpy>=2.0

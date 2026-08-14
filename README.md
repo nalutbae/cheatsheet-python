@@ -206,10 +206,16 @@ python data/numpy_1_array_creation.py
 | [`web_6_redirects_sessions_advanced.py`](web/web_6_redirects_sessions_advanced.py) | requests | Redirect handling, rate limiting, exponential backoff, Session config, PreparedRequest, environment variables |
 
 ### 🌐 Web Scraping
-| File | Description |
-|------|-------------|
-| [`web-scraping_1_extract_news_headlines.py`](web-scraping/web-scraping_1_extract_news_headlines.py) | Extract news headlines with requests + BeautifulSoup |
-| [`web-scraping_2_scrape_product_from_ecommerce.py`](web-scraping/web-scraping_2_scrape_product_from_ecommerce.py) | Scrape product data from e-commerce sites |
+> Requires `pip install beautifulsoup4 lxml requests` (or `pip install -r requirements.txt`).
+
+| File | Library | Description |
+|------|---------|-------------|
+| [`web-scraping_1_extract_news_headlines.py`](web-scraping/web-scraping_1_extract_news_headlines.py) | requests + BS4 | Basic web scraping — extract headlines from a page |
+| [`web-scraping_2_scrape_product_from_ecommerce.py`](web-scraping/web-scraping_2_scrape_product_from_ecommerce.py) | requests + BS4 | E-commerce scraping — product name, price, CSS selectors |
+| [`web-scraping_3_beautifulsoup_navigation.py`](web-scraping/web-scraping_3_beautifulsoup_navigation.py) | BS4 | Tree navigation: parents/children/siblings, string/text, tree modification, attributes, comments, encoding |
+| [`web-scraping_4_beautifulsoup_css_selectors.py`](web-scraping/web-scraping_4_beautifulsoup_css_selectors.py) | BS4 | CSS selectors deep dive: attribute selectors, pseudo-classes (:nth-child, :not, :has, :empty), combinators, select_one vs select |
+| [`web-scraping_5_beautifulsoup_find_select.py`](web-scraping/web-scraping_5_beautifulsoup_find_select.py) | BS4 | find/find_all deep dive: by tag/class/attr/regex/function, string parameter, find_next/previous/siblings, extract/decompose, select vs find_all comparison |
+| [`web-scraping_6_lxml_xpath.py`](web-scraping/web-scraping_6_lxml_xpath.py) | lxml | XPath expressions, predicates, axes, functions, CSS selectors via cssselect, tree manipulation, lxml vs BS4 comparison |
 
 ---
 
@@ -331,7 +337,11 @@ python data/numpy_1_array_creation.py
 │   └── web_6_redirects_sessions_advanced.py
 └── web-scraping/
     ├── web-scraping_1_extract_news_headlines.py
-    └── web-scraping_2_scrape_product_from_ecommerce.py
+    ├── web-scraping_2_scrape_product_from_ecommerce.py
+    ├── web-scraping_3_beautifulsoup_navigation.py
+    ├── web-scraping_4_beautifulsoup_css_selectors.py
+    ├── web-scraping_5_beautifulsoup_find_select.py
+    └── web-scraping_6_lxml_xpath.py
 ```
 
 ---

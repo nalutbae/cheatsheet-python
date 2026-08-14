@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![CI](https://github.com/YOUR_USERNAME/cheatsheet-python/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/cheatsheet-python/actions/workflows/ci.yml)
+[![CI](https://github.com/nalutbae/cheatsheet-python/actions/workflows/ci.yml/badge.svg)](https://github.com/nalutbae/cheatsheet-python/actions/workflows/ci.yml)
 
 A copy-paste-ready Python cheat sheet — every file is self-contained, runnable, and loaded with inline `# result` comments so you can learn by reading **or** by running.
 
@@ -23,6 +23,7 @@ A copy-paste-ready Python cheat sheet — every file is self-contained, runnable
   - [🟡 Intermediate — Modules](#-modules--packages-and-standard-library)
   - [🟡 Intermediate — Standard Library](#-stdlib--standard-library-reference)
   - [🔴 Advanced — Data Libraries (NumPy, Pandas, Matplotlib, Seaborn)](#-data-libraries--numpy-pandas-matplotlib-seaborn)
+  - [🌐 Web — HTTP Requests (requests)](#-web--http-requests-requests)
   - [🌐 Web Scraping](#-web-scraping)
 - [Repository Structure](#repository-structure)
 - [Contributing](#contributing)
@@ -64,6 +65,7 @@ python data/numpy_1_array_creation.py
 | **🔴 Week 4** | NumPy & data | `numpy_1_array_creation` → `numpy_5_linalg_random_io` |
 | **🔴 Week 5** | Pandas | `pandas_1_basics` → `pandas_3_io_cleaning_patterns` |
 | **🔴 Week 6** | Visualization | `matplotlib_1_basic_plots`, `seaborn_1_statistical_visualization` |
+| **🔴 Week 7** | HTTP & APIs | `web_1_http_methods`, `web_3_timeout_error_handling` |
 
 ---
 
@@ -191,6 +193,18 @@ python data/numpy_1_array_creation.py
 | [`matplotlib_3_statistical_3d_pandas.py`](data/matplotlib_3_statistical_3d_pandas.py) | Matplotlib | Box/violin plots, heatmap, contour, 3D surface/scatter, stacked area, pandas integration |
 | [`seaborn_1_statistical_visualization.py`](data/seaborn_1_statistical_visualization.py) | Seaborn | relplot/scatter/line, histplot/KDE/ECDF, box/violin/bar/count/swarm, regplot/lmplot, heatmap/clustermap, pairplot/jointplot, themes/palettes |
 
+### 🌐 Web — HTTP Requests (requests)
+> Requires `pip install requests` (or `pip install -r requirements.txt`).
+
+| File | Library | Description |
+|------|---------|-------------|
+| [`web_1_http_methods.py`](web/web_1_http_methods.py) | requests | GET/POST/PUT/PATCH/DELETE, query params, headers, JSON body, streaming |
+| [`web_2_headers_session_auth.py`](web/web_2_headers_session_auth.py) | requests | Custom headers, Basic/Digest/Bearer auth, cookies, Session, retry, SSL, proxy |
+| [`web_3_timeout_error_handling.py`](web/web_3_timeout_error_handling.py) | requests | Timeout config, exception hierarchy, ConnectionError, HTTPError, robust request helper |
+| [`web_4_file_upload_download.py`](web/web_4_file_upload_download.py) | requests | File upload (single/multi/in-memory), multipart, content-type, custom headers per file |
+| [`web_5_download_streaming.py`](web/web_5_download_streaming.py) | requests | File download, stream to disk, progress tracking, iter_content/iter_lines, retry on failure, conditional download (ETag) |
+| [`web_6_redirects_sessions_advanced.py`](web/web_6_redirects_sessions_advanced.py) | requests | Redirect handling, rate limiting, exponential backoff, Session config, PreparedRequest, environment variables |
+
 ### 🌐 Web Scraping
 | File | Description |
 |------|-------------|
@@ -308,6 +322,13 @@ python data/numpy_1_array_creation.py
 │   ├── var_10_set.py
 │   ├── var_11_dictionary.py
 │   └── var_12_bytes.py
+├── web/
+│   ├── web_1_http_methods.py
+│   ├── web_2_headers_session_auth.py
+│   ├── web_3_timeout_error_handling.py
+│   ├── web_4_file_upload_download.py
+│   ├── web_5_download_streaming.py
+│   └── web_6_redirects_sessions_advanced.py
 └── web-scraping/
     ├── web-scraping_1_extract_news_headlines.py
     └── web-scraping_2_scrape_product_from_ecommerce.py
@@ -319,9 +340,10 @@ python data/numpy_1_array_creation.py
 
 Files follow the pattern `category_sequencenumber_description.py`:
 
-- **Category directories** — `variables/`, `control-flow/`, `functions/`, `classes/`, `input-output/`, `modules/`, `stdlib/`, `data/`
+- **Category directories** — `variables/`, `control-flow/`, `functions/`, `classes/`, `input-output/`, `modules/`, `stdlib/`, `data/`, `web/`
 - **Standard library** — `stdlib_<library>.py` (one file per library)
 - **Data libraries** — `<library>_<number>_<topic>.py` (multiple files per library, in `data/`)
+- **Web** — `web_<number>_<topic>.py` (in `web/`)
 - **Comments** — English with inline `# result` comments showing expected output
 - **Section separators** — `print("=" * 5, "Section Title", "=" * 5)`
 - **Self-contained** — every file runs independently with `python <file>.py`

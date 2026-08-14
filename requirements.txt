@@ -6,3 +6,6 @@ numpy>=2.0
 pandas>=2.0
 matplotlib>=3.5
 seaborn>=0.13
+
+# Web — install only if you want to run web/ examples
+requests>=2.28
